@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/Insert/InsertAuthor.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Insert/InsertBook.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Insert/InsertBookPublisher.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Insert/InsertLoan.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Insert/InsertMember.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Insert/InsertPublisher.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Query/ShowBooksAndAuthors.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Query/ShowBooksAndMembers.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Query/ShowBooksAndPublishers.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Query/ShowBooksNotInLoans.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Query/ShowMembersAndLoanedBooks.java" dialect="GenericSQL" />
+  </component>
+</project>
