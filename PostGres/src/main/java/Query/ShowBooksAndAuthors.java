@@ -23,7 +23,7 @@ public class ShowBooksAndAuthors extends ComplexQueries{
                 System.out.println("Titlul cartii: " + title + ", Autor: " + name);
             }
         } catch (SQLException e) {
-            System.out.println("Eroare la executarea interogarii:" + e.getMessage());
+            System.err.println("Eroare la executarea interogarii:" + e.getMessage());
         }
     }
 }

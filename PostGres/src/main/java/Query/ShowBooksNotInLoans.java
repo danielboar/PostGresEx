@@ -22,7 +22,7 @@ public class ShowBooksNotInLoans extends ComplexQueries{
                 System.out.println("Cartea: " + title + " nu a fost imprumutata");
             }
         } catch (SQLException e) {
-            System.out.println("Eroare la executarea interogarii:" + e.getMessage());
+            System.err.println("Eroare la executarea interogarii:" + e.getMessage());
         }
     }
 }

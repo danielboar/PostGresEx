@@ -15,7 +15,7 @@ public class Main {
             MenuOption menu = new MenuOption(conn, scanner);
             menu.run();
         } catch (SQLException e) {
-            System.out.println("SQLException: " + e.getMessage());
+            System.err.println("SQLException: " + e.getMessage());
         }
     }
 }

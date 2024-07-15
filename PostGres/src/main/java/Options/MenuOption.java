@@ -43,10 +43,10 @@ public class MenuOption {
                         break;
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Eroare: Trebuie sa introduci doar cifre");
+                System.err.println("Eroare: Trebuie sa introduci doar cifre");
                 scanner.nextLine();
             }catch (RuntimeException e) {
-                System.out.println("Eroare: " + e.getMessage());
+                System.err.println("Eroare: " + e.getMessage());
             }
         }
     }

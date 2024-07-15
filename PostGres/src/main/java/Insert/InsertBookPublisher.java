@@ -44,14 +44,14 @@ public class InsertBookPublisher extends InsertData {
                         System.out.println("Inserarea a fost efectuata cu succes!\n");
                     }
                 }catch (SQLException e) {
-                    System.out.println("Eroare SQL la inserare: " + e.getMessage());
+                    System.err.println("Eroare SQL la inserare: " + e.getMessage());
                 } catch (IllegalArgumentException | InputMismatchException e) {
-                    System.out.println("Datele introduse nu sunt valide: " + e.getMessage());
+                    System.err.println("Datele introduse nu sunt valide: " + e.getMessage());
                     break;
                 }
             }
         }catch (SQLException e){
-            System.out.println("Eroare SQL la prepared statement: " + e.getMessage());
+            System.err.println("Eroare SQL la prepared statement: " + e.getMessage());
         }
     }
 }

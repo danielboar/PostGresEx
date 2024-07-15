@@ -51,14 +51,14 @@ public class InsertBook extends InsertData{
                         System.out.println("Inserarea a fost efectuata cu succes!\n");
                     }
                 }catch (SQLException e) {
-                    System.out.println("Eroare SQL la inserarea unei carti: " + e.getMessage());
+                    System.err.println("Eroare SQL la inserarea unei carti: " + e.getMessage());
                 } catch (InputMismatchException e) {
-                    System.out.println("Datele introduse nu sunt valide: " + e.getMessage());
+                    System.err.println("Datele introduse nu sunt valide: " + e.getMessage());
                     break;
                 }
             }
         }catch (SQLException e){
-            System.out.println("Eroare SQL la prepared statement " + e.getMessage());
+            System.err.println("Eroare SQL la prepared statement " + e.getMessage());
         }
     }
 }

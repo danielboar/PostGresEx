@@ -24,7 +24,7 @@ public class ShowBooksAndPublishers extends ComplexQueries{
                 System.out.println("Cartea: " + title + ", apartine editurii: " + name);
             }
         } catch (SQLException e) {
-            System.out.println("Eroare la executarea interogarii:" + e.getMessage());
+            System.err.println("Eroare la executarea interogarii:" + e.getMessage());
         }
     }
 }

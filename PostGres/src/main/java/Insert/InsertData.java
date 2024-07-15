@@ -20,6 +20,7 @@ public abstract class InsertData {
                 break;
             }
         }
+
         return ok;
     }
 }

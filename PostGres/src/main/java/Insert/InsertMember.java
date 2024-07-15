@@ -45,16 +45,16 @@ public class InsertMember extends InsertData{
                         System.out.println("Inserarea a fost efectuata cu succes!");
                     }
                 } catch (SQLException e) {
-                    System.out.println("Eroare SQL la inserarea unui membru: " + e.getMessage());
+                    System.err.println("Eroare SQL la inserarea unui membru: " + e.getMessage());
                 } catch (InputMismatchException e) {
-                    System.out.println("Datele introduse nu sunt valide: " + e.getMessage());
+                    System.err.println("Datele introduse nu sunt valide: " + e.getMessage());
                     break;
                 }catch (NullPointerException | IllegalArgumentException e){
-                    System.out.println("Eroare: Data de inscriere nu are formatul bun!");
+                    System.err.println("Eroare: Data de inscriere nu are formatul bun!");
                 }
             }
         }catch (SQLException e){
-            System.out.println("Eroare SQL la prepared statement: " + e.getMessage());
+            System.err.println("Eroare SQL la prepared statement: " + e.getMessage());
         }
     }
 }

@@ -24,7 +24,7 @@ public class ShowBooksAndMembers extends ComplexQueries{
                 System.out.println("Cartea: " + title + ", a fost imprumutata de catre: " + name);
             }
         } catch (SQLException e) {
-            System.out.println("Eroare la executarea interogarii:" + e.getMessage());
+            System.err.println("Eroare la executarea interogarii:" + e.getMessage());
         }
     }
 }

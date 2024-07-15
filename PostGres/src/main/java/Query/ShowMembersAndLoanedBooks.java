@@ -24,7 +24,7 @@ public class ShowMembersAndLoanedBooks extends ComplexQueries{
                 System.out.println("Membrul: " + name + ", a imprumutat cartea: " + title);
             }
         } catch (SQLException e) {
-            System.out.println("Eroare la executarea interogarii:" + e.getMessage());
+            System.err.println("Eroare la executarea interogarii:" + e.getMessage());
         }
     }
 }

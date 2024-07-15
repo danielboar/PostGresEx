@@ -46,16 +46,15 @@ public class InsertAuthor extends InsertData {
                         System.out.println("Inserarea a fost efectuata cu succes!\n");
                     }
                 } catch (SQLException e) {
-                    System.out.println("Eroare SQL la inserarea unui autor: " + e.getMessage());
+                    System.err.println("Eroare SQL la inserarea unui autor: " + e.getMessage());
                 } catch (InputMismatchException e) {
-                    System.out.println("Datele introduse nu sunt valide: " + e.getMessage());
-                    break;
+                    System.err.println("Datele introduse nu sunt valide: " + e.getMessage());
                 }catch (NullPointerException | IllegalArgumentException e){
-                    System.out.println("Eroare: Data de nastere nu are formatul bun!");
+                    System.err.println("Eroare: Data de nastere nu are formatul bun!");
                 }
             }
         }catch (SQLException e){
-            System.out.println("Eroare SQL la prepared statement: " + e.getMessage());
+            System.err.println("Eroare SQL la prepared statement: " + e.getMessage());
         }
     }
 }

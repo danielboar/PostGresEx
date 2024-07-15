@@ -13,7 +13,7 @@ public class Database {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
-            System.out.println("Eroare la conectarea la baza de date: " + e.getMessage());
+            System.err.println("Eroare la conectarea la baza de date: " + e.getMessage());
             return null;
         }
     }

@@ -58,16 +58,16 @@ public class InsertLoan extends InsertData{
                         System.out.println("Inserarea a fost efectuata cu succes!\n");
                     }
                 }catch (SQLException e) {
-                    System.out.println("Eroare SQL la inserarea unui imprumut: " + e.getMessage());
+                    System.err.println("Eroare SQL la inserarea unui imprumut: " + e.getMessage());
                 } catch (InputMismatchException e) {
-                    System.out.println("Datele introduse nu sunt valide " + e.getMessage());
+                    System.err.println("Datele introduse nu sunt valide " + e.getMessage());
                     break;
                 }catch (NullPointerException | IllegalArgumentException e){
-                    System.out.println("Eroare: Data de imprumut nu are formatul bun!");
+                    System.err.println("Eroare: Data de imprumut nu are formatul bun!");
                 }
             }
         }catch (SQLException e){
-            System.out.println("Eroare SQL la prepared statement: " + e.getMessage());
+            System.err.println("Eroare SQL la prepared statement: " + e.getMessage());
         }
     }
 }

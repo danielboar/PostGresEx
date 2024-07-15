@@ -33,7 +33,7 @@ public class InsertOption {
                 if (choice == 7) {
                     break;
                 } else if (choice > 7 || choice < 1) {
-                    System.out.println("Eroare: Optiune invalida!");
+                    System.err.println("Eroare: Optiune invalida!");
                     continue;
                 }
 
@@ -77,10 +77,10 @@ public class InsertOption {
                     break;
                 }
             }catch (InputMismatchException e) {
-                System.out.println("Eroare: Trebuie sa introduci doar cifre");
+                System.err.println("Eroare: Trebuie sa introduci doar cifre");
                 scanner.nextLine();
             }catch (RuntimeException e) {
-                System.out.println("Eroare: " + e.getMessage());
+                System.err.println("Eroare: " + e.getMessage());
             }
         }
     }
